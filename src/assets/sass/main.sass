@@ -1,0 +1,226 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+body
+  font-size: 18px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $font-family-base
+  overflow-x: hidden
+
+.img-responsive
+  display: block
+  width: 100%
+  height: auto
+
+.form-control
+  height: 50px
+  font-size: 16px
+
+.input-group-custom
+  input
+    z-index: 3
+    margin-right: -3px
+
+.form-control::placeholder
+  font-size: 16px
+  color: $color-grey
+
+.form-control:focus
+  box-shadow: none
+
+.editCommit
+  height: 50px
+
+
+.btn:disabled
+  opacity: 1
+  height: 30px
+  font-size: 8px
+
+.btn-default
+  background-color: $color-default-button
+  color: $color-dark
+  font-weight: 600
+
+.btn-outline-primary
+  background-color: $color-blue
+  color: $color-white
+  font-size: 11px
+  position: relative
+  z-index: 1
+
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle)
+  border-top-right-radius: .3rem
+  border-bottom-right-radius: .3rem
+
+.btn-outline-danger
+  background-color: $color-red
+  color: $color-white
+  font-size: 11px
+  position: relative
+  z-index: 1
+
+#button-addon-now
+  margin-right: -3px
+  z-index: 2
+  width: 60px
+
+#button-addon-yes
+  width: 60px
+
+.desabled
+  border: none
+  
+.bg-grey
+  background-color: $color-bg-grey
+
+.btn-rad
+  border-radius: .3rem
+
+.text-edit
+  color: $color-blue
+  &:hover
+    color: $color-blue
+
+.text-delete
+  color: $color-red
+  &:hover
+    color: $color-red
+
+.btn-actions-commit
+  font-size: 11px
+  position: relative
+  z-index: 1
+  display: flex
+  width: auto
+  padding: 3px
+  margin: 1px
+  font-weight: 600
+  align-items: center
+  height: 50%
+  &:hover
+    background-color: $color-bg-grey
+
+
+.input-group-append
+  position: relative
+  margin-left: 0
+  .btn
+    z-index: 1
+    width: 90px
+
+.input-group > .form-control:not(:last-child)
+  border-radius: 0.35rem
+
+#app
+  display: flex
+  justify-content: center
+
+.home	
+  width: 568px
+
+._home-wrapper-img-block
+  width: 100%
+
+._wrapper-block-main-h
+  h1
+    font-weight: 400
+    color: $color-dark
+    margin-top: 15px
+    font-size: 20px
+
+._home-wrapper-content
+  margin-top: 15px
+  display: flex
+  justify-content: space-between
+
+._wrapper-block-main-btn
+  display: flex
+  align-items: center
+
+._wrapper-home-main-comit-block
+  margin-bottom: 20px
+  margin-top: 15px
+
+.wrapper-user-comit
+  display: flex
+  justify-content: space-between
+  height: 50px
+  border-radius: 0.25rem
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  .form-group
+    margin-bottom: 0
+    width: 100%
+    input
+      width: 100%
+  a
+    .input-group-custom
+      margin-right: 5px
+  .wrapper-block-buttons-commit
+    display: flex
+  a
+    display: flex
+    color: $color-dark
+    text-decoration: none 
+    align-items: center
+    width: 100%
+    &:hover
+      text-decoration: none
+  &:hover
+    background-color: $color-bg-grey
+
+.wrapper-message-commit
+  max-width: 370px
+  height: 100%
+  span
+    font-size: 11px
+  p
+    font-size: 16px
+    margin-top: -10px
+    padding: 0
+  
+._wrapper-home-input
+  width: 100%
+
+.wrapper-block-buttons-comit
+  display: flex
+  justify-content: center
+  align-items: center
+
+.commit-icons
+  width: 30px
+
+
+
+
